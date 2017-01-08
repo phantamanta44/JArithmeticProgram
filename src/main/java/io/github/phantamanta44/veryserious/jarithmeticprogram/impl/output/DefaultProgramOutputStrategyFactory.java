@@ -10,41 +10,42 @@ import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.nonnul
 
 public class DefaultProgramOutputStrategyFactory implements IProgramOutputStrategyFactory {
 
+    private final IGuardedOperationSet<ProgramOutputStrategyContext> outputTypeOperationSet;
     private ProgramOutputType outputType;
 
     public DefaultProgramOutputStrategyFactory() {
-        IGuardedOperationSet<ProgramOutputStrategyContainer> outputTypeOperationSet = GuardedOperations.getInstance().createOperationSet();
+        outputTypeOperationSet = GuardedOperations.getInstance().createOperationSet();
         try {
-            outputTypeOperationSet.registerGuardedOperation(new IGuard<ProgramOutputStrategyContainer>() {
+            outputTypeOperationSet.registerGuardedOperation(new IGuard<ProgramOutputStrategyContext>() {
                 @Override
-                public boolean shouldFallThrough(ProgramOutputStrategyContainer value) {
+                public boolean shouldFallThrough(ProgramOutputStrategyContext value) {
                     try {
-                        EqualityVerification.getInstance().verifyEquality(value.getStrategy(), ProgramOutputType.STANDARD_OUTPUT);
+                        EqualityVerification.getInstance().verifyEquality(value.type, ProgramOutputType.STANDARD_OUTPUT);
                         return false;
                     } catch (IllegalValueException e) {
                         return true;
                     }
                 }
-            }, new IGuardedOperation<ProgramOutputStrategyContainer>() {
+            }, new IGuardedOperation<ProgramOutputStrategyContext>() {
                 @Override
-                public void performOperation(ProgramOutputStrategyContainer value) {
+                public void performOperation(ProgramOutputStrategyContext value) {
                     IProgramOutputStrategy strategy = new StandardProgramOutputStrategy();
                     value.setStrategy(strategy);
                 }
             });
-            outputTypeOperationSet.registerGuardedOperation(new IGuard<ProgramOutputStrategyContainer>() {
+            outputTypeOperationSet.registerGuardedOperation(new IGuard<ProgramOutputStrategyContext>() {
                 @Override
-                public boolean shouldFallThrough(ProgramOutputStrategyContainer value) {
+                public boolean shouldFallThrough(ProgramOutputStrategyContext value) {
                     try {
-                        EqualityVerification.getInstance().verifyEquality(value.getStrategy(), ProgramOutputType.ERROR_OUTPUT);
+                        EqualityVerification.getInstance().verifyEquality(value.type, ProgramOutputType.ERROR_OUTPUT);
                         return false;
                     } catch (IllegalValueException e) {
                         return true;
                     }
                 }
-            }, new IGuardedOperation<ProgramOutputStrategyContainer>() {
+            }, new IGuardedOperation<ProgramOutputStrategyContext>() {
                 @Override
-                public void performOperation(ProgramOutputStrategyContainer value) {
+                public void performOperation(ProgramOutputStrategyContext value) {
                     IProgramOutputStrategy strategy = new ErrorProgramOutputStrategy();
                     value.setStrategy(strategy);
                 }
@@ -63,7 +64,8 @@ public class DefaultProgramOutputStrategyFactory implements IProgramOutputStrate
     public IProgramOutputStrategy instantiateStrategy() {
         try {
             NonNullVerification.getInstance().verifyNonNull(outputType);
-            ProgramOutputStrategyContainer outputStrategyContainer = new ProgramOutputStrategyContainer(outputType);
+            ProgramOutputStrategyContext outputStrategyContainer = new ProgramOutputStrategyContext(outputType);
+            outputTypeOperationSet.resolveOperation(outputStrategyContainer);
             NonNullVerification.getInstance().verifyNonNull(outputStrategyContainer.getStrategy());
             return outputStrategyContainer.getStrategy();
         } catch (IllegalValueException e) {

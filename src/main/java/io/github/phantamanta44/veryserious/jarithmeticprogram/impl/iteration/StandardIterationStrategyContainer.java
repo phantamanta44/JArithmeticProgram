@@ -9,10 +9,14 @@ import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.nonnul
 
 import java.util.LinkedList;
 
-public class StandardIterationStrategyContext<T> {
+public class StandardIterationStrategyContainer<T> {
 
     private LinkedList<IIterationVisitor<T>> iterationVisitors;
     private Iterable<T> iterationProvider;
+
+    public StandardIterationStrategyContainer() {
+        this.iterationVisitors = new LinkedList<IIterationVisitor<T>>();
+    }
 
     public Iterable<IIterationVisitor<T>> getIterationVisitors() {
         return iterationVisitors;

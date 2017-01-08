@@ -16,7 +16,7 @@ public class StandardGuardedOperationSet<V> implements IGuardedOperationSet<V> {
         GuardedOperationLinkedNode<V> newNode = new GuardedOperationLinkedNode<V>(guard, operation);
         try {
             NonNullVerification.getInstance().verifyNonNull(guards);
-            guards.appendNode(newNode);
+            guards.getLastNode().appendNode(newNode);
         } catch (IllegalValueException e) {
             guards = newNode;
         }

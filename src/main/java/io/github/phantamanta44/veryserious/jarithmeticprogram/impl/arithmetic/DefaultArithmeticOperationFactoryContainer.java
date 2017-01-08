@@ -1,17 +1,18 @@
-package io.github.phantamanta44.veryserious.jarithmeticprogram.impl;
+package io.github.phantamanta44.veryserious.jarithmeticprogram.impl.arithmetic;
 
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.arithmetic.IArithmeticOperationFactory;
 
-public class MutableArithmeticOperationFactoryWrapper {
+public class DefaultArithmeticOperationFactoryContainer {
 
+    private final String operationName;
     private IArithmeticOperationFactory operationFactory;
 
-    public MutableArithmeticOperationFactoryWrapper() {
-        this(null);
+    public DefaultArithmeticOperationFactoryContainer(String operationName) {
+        this.operationName = operationName;
     }
 
-    public MutableArithmeticOperationFactoryWrapper(IArithmeticOperationFactory operationFactory) {
-        this.operationFactory = operationFactory;
+    public String getOperationName() {
+        return operationName;
     }
 
     public IArithmeticOperationFactory getOperationFactory() {

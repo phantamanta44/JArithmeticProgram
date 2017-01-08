@@ -18,17 +18,18 @@ import java.io.IOException;
 
 public class Main {
 
-    private static final Main INSTANCE = new Main();
+    private static Main INSTANCE = new Main();
 
     public static void main(String[] args) {
         GuardedOperations.getInstance().bindImplementation(new DefaultGuardedOperationSetFactory());
         Iterations.getInstance().bindImplementation(new DefaultIterationStrategyFactoryFactory());
+        INSTANCE.initializeOutput();
         INSTANCE.doArithmetic(args);
     }
 
-    private final IProgramOutputStrategy standardOutputStrategy, errorOutputStrategy;
+    private IProgramOutputStrategy standardOutputStrategy, errorOutputStrategy;
 
-    public Main() {
+    public void initializeOutput() {
         IProgramOutputStrategyFactory programOutputStrategyFactory = new DefaultProgramOutputStrategyFactory();
         programOutputStrategyFactory.setOutputType(ProgramOutputType.STANDARD_OUTPUT);
         this.standardOutputStrategy = programOutputStrategyFactory.instantiateStrategy();
@@ -46,19 +47,23 @@ public class Main {
             } catch (IOException e2) {
                 throw new RuntimeException(e2);
             }
+            Runtime.getRuntime().exit(1);
         }
         try {
             IArithmeticOperationFactory operationFactory = ArithmeticProgramService.getOperation(args[0]);
-            IArithmeticOperation<Double, Double> operation = operationFactory.instantiate();
+            IArithmeticOperation<Double> operation = operationFactory.instantiate();
             // TODO Parse input as a double
             // TODO Do arithmetic
             // TODO Output result
+            standardOutputStrategy.performTextualOutputSolution(operation.getClass().getName());
         } catch (UnsupportedOperationException e) {
             try {
                 errorOutputStrategy.performTextualOutputSolution(e.getMessage());
             } catch (IOException e2) {
                 throw new RuntimeException(e2);
             }
+        } catch (IOException e2) {
+            throw new RuntimeException(e2);
         }
     }
 

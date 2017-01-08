@@ -3,13 +3,13 @@ package io.github.phantamanta44.veryserious.jarithmeticprogram.impl.output;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.IProgramOutputStrategy;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.ProgramOutputType;
 
-public class ProgramOutputStrategyContainer {
+public class ProgramOutputStrategyContext {
 
     public final ProgramOutputType type;
 
     private IProgramOutputStrategy strategy;
 
-    public ProgramOutputStrategyContainer(ProgramOutputType type) {
+    public ProgramOutputStrategyContext(ProgramOutputType type) {
         this.type = type;
     }
 

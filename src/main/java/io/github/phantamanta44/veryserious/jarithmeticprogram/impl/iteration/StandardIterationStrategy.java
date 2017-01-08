@@ -6,9 +6,9 @@ import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.Illega
 
 public class StandardIterationStrategy<T> implements IIterationStrategy<T> {
 
-    private final StandardIterationStrategyContext<T> iterationContext;
+    private final StandardIterationStrategyContainer<T> iterationContext;
 
-    public StandardIterationStrategy(StandardIterationStrategyContext<T> iterationContext) {
+    public StandardIterationStrategy(StandardIterationStrategyContainer<T> iterationContext) {
         this.iterationContext = iterationContext;
     }
 

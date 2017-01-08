@@ -7,10 +7,10 @@ import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.Illega
 
 public class StandardIterationStrategyFactory<T> implements IIterationStrategyFactory<T> {
 
-    StandardIterationStrategyContext<T> iterationContext;
+    StandardIterationStrategyContainer<T> iterationContext;
 
     public StandardIterationStrategyFactory() {
-        iterationContext = new StandardIterationStrategyContext<T>();
+        iterationContext = new StandardIterationStrategyContainer<T>();
     }
 
     @Override

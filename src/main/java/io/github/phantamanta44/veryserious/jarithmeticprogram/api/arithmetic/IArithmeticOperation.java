@@ -1,7 +1,7 @@
 package io.github.phantamanta44.veryserious.jarithmeticprogram.api.arithmetic;
 
-public interface IArithmeticOperation<I extends Number, O extends Number> {
+public interface IArithmeticOperation<T extends Number> {
 
-    O applyArithmeticOperation(I value);
+    T applyArithmeticOperation(T valueA, T valueB);
 
 }
