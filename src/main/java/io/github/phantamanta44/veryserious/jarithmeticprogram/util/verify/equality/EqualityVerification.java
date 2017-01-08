@@ -2,6 +2,7 @@ package io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.equal
 
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.IVerifier;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.IllegalValueException;
+import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.nonnull.NonNullVerification;
 
 public class EqualityVerification {
 
@@ -14,15 +15,18 @@ public class EqualityVerification {
     private IEqualityVerificationStrategyFactory implementation;
 
     public void bindImplementation(IEqualityVerificationStrategyFactory implementation) {
-        if (this.implementation == null) {
-            this.implementation = implementation;
-        } else {
+        try {
+            NonNullVerification.getInstance().verifyNonNull(this.implementation);
             throw new IllegalStateException("Equality verification factory already bound!");
+        } catch (IllegalValueException e) {
+            this.implementation = implementation;
         }
     }
 
     public <A, B> void verifyEquality(A valueA, B valueB) throws IllegalValueException {
-        if (implementation == null) {
+        try {
+            NonNullVerification.getInstance().verifyNonNull(this.implementation);
+        } catch (IllegalValueException e) {
             bindImplementation(new DefaultEqualityVerificationStrategyFactory());
         }
         IEqualityVerificationStrategy<A, B> strategy = implementation.instantiateStrategy();

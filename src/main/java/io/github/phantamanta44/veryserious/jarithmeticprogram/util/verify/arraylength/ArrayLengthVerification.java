@@ -2,6 +2,7 @@ package io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.array
 
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.IVerifier;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.IllegalValueException;
+import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.nonnull.NonNullVerification;
 
 public class ArrayLengthVerification {
 
@@ -14,15 +15,18 @@ public class ArrayLengthVerification {
     private IArrayLengthVerificationStrategyFactory implementation;
 
     public void bindImplementation(IArrayLengthVerificationStrategyFactory implementation) {
-        if (this.implementation == null) {
-            this.implementation = implementation;
-        } else {
+        try {
+            NonNullVerification.getInstance().verifyNonNull(this.implementation);
             throw new IllegalStateException("Non-null verification factory already bound!");
+        } catch (IllegalValueException e) {
+            this.implementation = implementation;
         }
     }
 
     public <T> void verifyArrayLength(T[] value, int length) throws IllegalValueException {
-        if (implementation == null) {
+        try {
+            NonNullVerification.getInstance().verifyNonNull(this.implementation);
+        } catch (IllegalValueException e) {
             bindImplementation(new DefaultArrayLengthVerificationStrategyFactory());
         }
         implementation.setMinimumArrayLength(length);

@@ -4,10 +4,12 @@ import io.github.phantamanta44.veryserious.jarithmeticprogram.api.ArithmeticProg
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.arguments.ArgumentVerification;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.arithmetic.IArithmeticOperation;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.arithmetic.IArithmeticOperationFactory;
+import io.github.phantamanta44.veryserious.jarithmeticprogram.api.input.*;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.IProgramOutputStrategy;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.IProgramOutputStrategyFactory;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.ProgramOutputType;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.impl.guard.DefaultGuardedOperationSetFactory;
+import io.github.phantamanta44.veryserious.jarithmeticprogram.impl.input.DefaultNumeralParsingStrategyFactoryProvider;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.impl.iteration.DefaultIterationStrategyFactoryFactory;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.impl.output.DefaultProgramOutputStrategyFactory;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.guard.GuardedOperations;
@@ -23,6 +25,7 @@ public class Main {
     public static void main(String[] args) {
         GuardedOperations.getInstance().bindImplementation(new DefaultGuardedOperationSetFactory());
         Iterations.getInstance().bindImplementation(new DefaultIterationStrategyFactoryFactory());
+        NumeralParsing.getInstance().bindImplementation(new DefaultNumeralParsingStrategyFactoryProvider());
         INSTANCE.initializeOutput();
         INSTANCE.doArithmetic(args);
     }
@@ -52,10 +55,13 @@ public class Main {
         try {
             IArithmeticOperationFactory operationFactory = ArithmeticProgramService.getOperation(args[0]);
             IArithmeticOperation<Double> operation = operationFactory.instantiate();
-            // TODO Parse input as a double
-            // TODO Do arithmetic
-            // TODO Output result
-            standardOutputStrategy.performTextualOutputSolution(operation.getClass().getName());
+            INumeralParsingStrategyFactory<Double> parsingStrategyFactoryProvider = NumeralParsing.getInstance().strategyFactoryFor(NumeralType.DOUBLE_NUMERAL_TYPE);
+            INumeralParsingStrategy<Double> parsingStrategy = parsingStrategyFactoryProvider.instantiateStrategy();
+            Double firstParsedArgument = parsingStrategy.resolveInput(args[1]);
+            Double secondParsedArgument = parsingStrategy.resolveInput(args[2]);
+            Double resultantValue = operation.applyArithmeticOperation(firstParsedArgument, secondParsedArgument);
+            // TODO Enterprise-quality double stringification
+            standardOutputStrategy.performTextualOutputSolution(resultantValue.toString());
         } catch (UnsupportedOperationException e) {
             try {
                 errorOutputStrategy.performTextualOutputSolution(e.getMessage());

@@ -12,8 +12,9 @@ public class StandardArgumentVerificationStrategy implements IArgumentVerificati
         return new IVerifier<String[]>() {
             @Override
             public void testValidity(String[] value) throws IllegalValueException {
-                ArrayLengthVerification.getInstance().verifyArrayLength(value, 2);
+                ArrayLengthVerification.getInstance().verifyArrayLength(value, 3);
                 NumeralVerification.getInstance().verifyNumeral(value[1]);
+                NumeralVerification.getInstance().verifyNumeral(value[2]);
             }
         };
     }

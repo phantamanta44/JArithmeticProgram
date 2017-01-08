@@ -23,8 +23,6 @@ public class GuardedOperationLinkedNode<V> {
                 nextNode.attemptExecution(value);
             } catch (IllegalValueException ignored) {
                 // NO-OP
-                System.out.println("there was no next guard!");
-                new Exception().printStackTrace(System.out);
             }
         } else {
             guardedOperation.performOperation(value);

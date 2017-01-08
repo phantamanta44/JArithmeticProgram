@@ -2,6 +2,7 @@ package io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.numer
 
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.IVerifier;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.IllegalValueException;
+import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.nonnull.NonNullVerification;
 
 public class NumeralVerification {
 
@@ -14,15 +15,18 @@ public class NumeralVerification {
     private INumeralVerificationStrategyFactory implementation;
 
     public void bindImplementation(INumeralVerificationStrategyFactory implementation) {
-        if (this.implementation == null) {
-            this.implementation = implementation;
-        } else {
+        try {
+            NonNullVerification.getInstance().verifyNonNull(this.implementation);
             throw new IllegalStateException("Non-null verification factory already bound!");
+        } catch (IllegalValueException e) {
+            this.implementation = implementation;
         }
     }
 
     public void verifyNumeral(String value) throws IllegalValueException {
-        if (implementation == null) {
+        try {
+            NonNullVerification.getInstance().verifyNonNull(this.implementation);
+        } catch (IllegalValueException e) {
             bindImplementation(new DefaultNumeralVerificationStrategyFactory());
         }
         INumeralVerificationStrategy strategy = implementation.instantiateStrategy();

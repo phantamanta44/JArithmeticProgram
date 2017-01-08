@@ -1,6 +1,9 @@
 package io.github.phantamanta44.veryserious.jarithmeticprogram.util.iteration;
 
 
+import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.IllegalValueException;
+import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.nonnull.NonNullVerification;
+
 public class Iterations {
 
     private static final Iterations INSTANCE = new Iterations();
@@ -12,18 +15,21 @@ public class Iterations {
     private IIterationStrategyFactoryFactory implementation;
 
     public void bindImplementation(IIterationStrategyFactoryFactory implementation) {
-        if (this.implementation == null) {
-            this.implementation = implementation;
-        } else {
+        try {
+            NonNullVerification.getInstance().verifyNonNull(this.implementation);
             throw new IllegalStateException("Iteration strategy factory factory already bound!");
+        } catch (IllegalValueException e) {
+            this.implementation = implementation;
         }
     }
 
     public <T> IIterationStrategyFactory<T> retrieveStrategyFactory() {
-        if (this.implementation == null) {
+        try {
+            NonNullVerification.getInstance().verifyNonNull(this.implementation);
+            return implementation.instantiateFactory();
+        } catch (IllegalValueException e) {
             throw new IllegalStateException("No iteration strategy factory factory bound!");
         }
-        return implementation.instantiateFactory();
     }
     
 }

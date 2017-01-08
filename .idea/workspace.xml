@@ -2,27 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2084277e-8fcf-499d-bd33-0a5e5467db3d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arithmetic/DefaultArithmeticOperationFactoryContainer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arithmetic/DefaultArithmeticOperationFactoryFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arithmetic/IArithmeticOperationFactoryFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arithmetic/addition/AdditionOperation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arithmetic/addition/DefaultAdditionOperationFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/MutableArithmeticOperationFactoryWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arithmetic/MutableArithmeticOperationFactoryWrapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/StandardIterationStrategyContext.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/StandardIterationStrategyContainer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/ProgramOutputStrategyContainer.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/ProgramOutputStrategyContext.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/io.github.phantamanta44.veryserious.jarithmeticprogram.api.ArithmeticProgramService" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/io.github.phantamanta44.veryserious.jarithmeticprogram.api.ArithmeticProgramService" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategyFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategyFactoryProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/NumeralParsing.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/NumeralType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/DefaultNumeralParsingStrategyFactoryContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/DefaultNumeralParsingStrategyFactoryProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/doubletype/StandardDoubleParsingStrategyFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/ArithmeticProgramService.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/ArithmeticProgramService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/arithmetic/IArithmeticOperation.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/arithmetic/IArithmeticOperation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/arithmetic/IArithmeticOperationFactory.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/arithmetic/IArithmeticOperationFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/DefaultArithmeticProgramService.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/DefaultArithmeticProgramService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/Main.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arguments/StandardArgumentVerificationStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arguments/StandardArgumentVerificationStrategy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/GuardedOperationLinkedNode.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/GuardedOperationLinkedNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/StandardGuardedOperationSet.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/StandardGuardedOperationSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/StandardIterationStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/StandardIterationStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/StandardIterationStrategyFactory.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/StandardIterationStrategyFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/DefaultProgramOutputStrategyFactory.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/DefaultProgramOutputStrategyFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/StandardProgramOutputStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/StandardProgramOutputStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/guard/GuardedOperations.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/guard/GuardedOperations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/Iterations.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/Iterations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/arraylength/ArrayLengthVerification.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/arraylength/ArrayLengthVerification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/equality/EqualityVerification.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/equality/EqualityVerification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/nonnull/NonNullVerification.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/nonnull/NonNullVerification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/NumeralVerification.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/NumeralVerification.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,13 +35,42 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
-              <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            <state relative-caret-position="828">
+              <caret line="62" column="61" lean-forward="false" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultNumeralParsingStrategyFactoryProvider.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/DefaultNumeralParsingStrategyFactoryProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="681">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumeralType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/NumeralType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1188">
+              <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#405#413#0" expanded="true" />
+                <element signature="e#507#514#0" expanded="true" />
+                <element signature="e#611#620#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,6 +98,7 @@
       <find>GuardedOperations</find>
       <find>visitor</find>
       <find>println</find>
+      <find>ArrayLengthVerification</find>
     </findStrings>
     <replaceStrings>
       <replace>Equality</replace>
@@ -81,6 +107,7 @@
       <replace>NonNull</replace>
       <replace>Iterations</replace>
       <replace>IterationVisitor</replace>
+      <replace>NumeralParsing</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\evand\IdeaProjects\JArithmeticProgram\src\main\java\io\github\phantamanta44\veryserious\jarithmeticprogram\util\verify\equality</dir>
@@ -106,25 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/GuardedOperationCollectionNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/GuardedOperationStackElement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/guard/IGuardedOperationSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/NumeralVerificationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/context/INumeralVerificationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/context/StandardNumeralVerificationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/context/INumeralVerificationContextFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/context/DefaultNumeralVerificationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/context/DefaultNumeralVerificationContextFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arguments/StandardArgumentVerificationStrategy.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/StdioProgramOutputStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/ErrorProgramOutputStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/IIterationVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/IIterationStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/IIterationStrategyFactoryFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/guard/GuardedOperations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/Iterations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/DefaultIterationStrategyFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/DefaultIterationStrategyFactoryFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/IterationContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/singlevisitor/SingleVisitorIterationStrategyContext.java" />
@@ -150,13 +158,32 @@
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arithmetic/addition/AdditionOperation.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/StandardProgramOutputStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/DefaultProgramOutputStrategyFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/StandardIterationStrategyContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/GenericNumeralVerificationStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/StandardGuardedOperationSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/GuardedOperationLinkedNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arithmetic/DefaultArithmeticOperationFactoryFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/ArithmeticProgramService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arguments/StandardArgumentVerificationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/IInputParsingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/IInputParsingStrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategyFactoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategyFactoryProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/guard/GuardedOperations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/Iterations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/arraylength/ArrayLengthVerification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/equality/EqualityVerification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/NumeralVerification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/NumeralParsing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/DefaultNumeralParsingStrategyFactoryContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/doubletype/StandardDoubleParsingStrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/doubletype/StandardDoubleParsingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/nonnull/NonNullVerification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/GuardedOperationLinkedNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/NumeralType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/DefaultNumeralParsingStrategyFactoryProvider.java" />
       </list>
     </option>
   </component>
@@ -190,7 +217,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-16" />
     <option name="y" value="-16" />
-    <option name="width" value="3872" />
+    <option name="width" value="3856" />
     <option name="height" value="2092" />
   </component>
   <component name="ProjectView">
@@ -208,8 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -322,6 +347,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JArithmeticProgram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JArithmeticProgram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jarithmeticprogram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -356,7 +415,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="arithmetic" />
+              <option name="myItemId" value="input" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,11 +449,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="arithmetic" />
+              <option name="myItemId" value="input" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="addition" />
+              <option name="myItemId" value="doubletype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JArithmeticProgram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JArithmeticProgram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jarithmeticprogram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,8 +521,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JArithmeticProgram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JArithmeticProgram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jarithmeticprogram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="input" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -442,8 +571,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/equality" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\evand\IdeaProjects\JArithmeticProgram\src\main\resources\META-INF\services" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.github.phantamanta44.veryserious.jarithmeticprogram.impl.input.doubletype" />
+      <recent name="io.github.phantamanta44.veryserious.jarithmeticprogram.impl.output" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\evand\IdeaProjects\JArithmeticProgram\src\main\java\io\github\phantamanta44\veryserious\jarithmeticprogram\util\verify\arraylength" />
@@ -453,8 +583,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.github.phantamanta44.veryserious.jarithmeticprogram.impl.output" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="io.github.phantamanta44.veryserious.jarithmeticprogram.impl.output" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\evand\IdeaProjects\JArithmeticProgram\src\main\resources\META-INF\services" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
@@ -848,7 +978,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="io.github.phantamanta44.veryserious.jarithmeticprogram.impl.Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="add 3.1415" />
+      <option name="PROGRAM_PARAMETERS" value="add 5.2 6.8" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -877,12 +1007,13 @@
       <option name="presentableId" value="Default" />
       <updated>1483844773485</updated>
       <workItem from="1483844776111" duration="9837000" />
-      <workItem from="1483896488351" duration="6814000" />
+      <workItem from="1483896488351" duration="7248000" />
+      <workItem from="1483916202572" duration="2282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16651000" />
+    <option name="totallyTimeSpent" value="19367000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -894,34 +1025,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <frame x="-16" y="-16" width="3856" height="2092" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23850267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23845327" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2529412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25725028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
@@ -943,162 +1074,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/guard/IGuardedOperationSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/nonnull/GenericNonNullVerificationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/context/INumeralVerificationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arguments/DefaultArgumentVerificationStrategyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/context/INumeralVerificationContextFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/context/DefaultNumeralVerificationContextFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="612" column="35" lean-forward="false" selection-start-line="612" selection-start-column="21" selection-end-line="612" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="88">
-            <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/StdioProgramOutputStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#630#631#0" expanded="false" />
-            <element signature="e#678#679#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/output/ErrorProgramOutputStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="58" />
-          <folding>
-            <element signature="e#322#323#0" expanded="false" />
-            <element signature="e#355#356#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arguments/StandardArgumentVerificationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="e#757#1072#0" expanded="false" />
-            <element signature="e#1071#1072#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/DefaultGuardedOperationSetFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-          <folding>
-            <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#501#502#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/IIterationStrategyFactoryFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/guard/GuardedOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/Iterations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding>
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/IIterationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/IIterationVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/singlevisitor/SingleVisitorIterationStrategyContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="968">
           <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,11 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1118,7 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,9 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
           <caret line="28" column="71" lean-forward="true" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,31 +1106,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1232">
           <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#674#675#0" expanded="false" />
-            <element signature="e#752#753#0" expanded="false" />
-            <element signature="e#831#832#0" expanded="false" />
-            <element signature="e#892#893#0" expanded="false" />
-            <element signature="e#968#969#0" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/MutableIterationVisitorContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/iteration/MutableIterationVisitorContainer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/IterationExitException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,13 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1252">
           <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1089#2130#0" expanded="false" />
-            <element signature="e#1409#1644#0" expanded="false" />
-            <element signature="e#1643#1644#0" expanded="false" />
-            <element signature="e#2129#2130#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1182,9 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
           <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1200,7 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,7 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,11 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1236,10 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="e#230#231#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1247,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="968">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,7 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,13 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="559">
           <caret line="17" column="72" lean-forward="false" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1277,7 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,7 +1216,7 @@
         <state relative-caret-position="572">
           <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
-            <element signature="e#295#325#0" expanded="true" />
+            <element signature="e#295#325#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1303,22 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="641" column="16" lean-forward="false" selection-start-line="641" selection-start-column="16" selection-end-line="641" selection-end-column="16" />
-          <folding>
-            <element signature="e#26222#26223#0" expanded="false" />
-            <element signature="e#26265#26266#0" expanded="false" />
-            <element signature="e#26470#26471#0" expanded="false" />
-            <element signature="e#26528#26529#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/GuardedOperationLinkedNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1326,31 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1008#3856#0" expanded="true" />
-            <element signature="e#1598#1843#0" expanded="true" />
-            <element signature="e#1842#1843#0" expanded="true" />
-            <element signature="e#1845#2072#0" expanded="true" />
-            <element signature="e#2071#2072#0" expanded="true" />
-            <element signature="e#2140#2637#0" expanded="true" />
-            <element signature="e#2636#2637#0" expanded="true" />
-            <element signature="e#2639#2888#0" expanded="true" />
-            <element signature="e#2887#2888#0" expanded="true" />
-            <element signature="e#2956#3181#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
-            <element signature="e#3183#3456#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3855#3856#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/StandardGuardedOperationSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,18 +1258,10 @@
         <state relative-caret-position="528">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#465#466#0" expanded="false" />
+            <element signature="e#514#515#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/equality/EqualityVerification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1396,7 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1404,7 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1413,7 +1284,7 @@
         <state relative-caret-position="616">
           <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1423,16 +1294,209 @@
         <state relative-caret-position="308">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#1299#1893#0" expanded="true" />
-            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#1299#1893#0" expanded="false" />
+            <element signature="e#1892#1893#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/arguments/StandardArgumentVerificationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+          <folding>
+            <element signature="e#757#1147#0" expanded="false" />
+            <element signature="e#1146#1147#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/arguments/ArgumentVerification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategyFactoryProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/INumeralParsingStrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/DefaultNumeralVerificationStrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/iteration/Iterations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="27" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/arraylength/ArrayLengthVerification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/equality/EqualityVerification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/numeral/NumeralVerification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="27" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/DefaultNumeralParsingStrategyFactoryContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/doubletype/StandardDoubleParsingStrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/doubletype/StandardDoubleParsingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="8" column="64" lean-forward="false" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+          <folding>
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/guard/GuardedOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/StandardGuardedOperationSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/guard/GuardedOperationLinkedNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/NumeralParsing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/util/verify/nonnull/NonNullVerification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        <state relative-caret-position="828">
+          <caret line="62" column="61" lean-forward="false" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/api/input/NumeralType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#405#413#0" expanded="true" />
+            <element signature="e#507#514#0" expanded="true" />
+            <element signature="e#611#620#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/veryserious/jarithmeticprogram/impl/input/DefaultNumeralParsingStrategyFactoryProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
