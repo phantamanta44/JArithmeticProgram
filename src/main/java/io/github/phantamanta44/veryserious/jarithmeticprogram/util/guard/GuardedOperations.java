@@ -8,7 +8,7 @@ public class GuardedOperations {
         return INSTANCE;
     }
 
-    public IGuardedOperationSetFactory implementation;
+    private IGuardedOperationSetFactory implementation;
 
     public void bindImplementation(IGuardedOperationSetFactory implementation) {
         if (this.implementation == null) {

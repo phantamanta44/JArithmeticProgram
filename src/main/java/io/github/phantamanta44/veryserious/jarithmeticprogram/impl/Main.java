@@ -8,8 +8,10 @@ import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.IProgra
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.IProgramOutputStrategyFactory;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.ProgramOutputType;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.impl.guard.DefaultGuardedOperationSetFactory;
+import io.github.phantamanta44.veryserious.jarithmeticprogram.impl.iteration.DefaultIterationStrategyFactoryFactory;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.impl.output.DefaultProgramOutputStrategyFactory;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.guard.GuardedOperations;
+import io.github.phantamanta44.veryserious.jarithmeticprogram.util.iteration.Iterations;
 import io.github.phantamanta44.veryserious.jarithmeticprogram.util.verify.IllegalValueException;
 
 import java.io.IOException;
@@ -20,6 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
         GuardedOperations.getInstance().bindImplementation(new DefaultGuardedOperationSetFactory());
+        Iterations.getInstance().bindImplementation(new DefaultIterationStrategyFactoryFactory());
         INSTANCE.doArithmetic(args);
     }
 

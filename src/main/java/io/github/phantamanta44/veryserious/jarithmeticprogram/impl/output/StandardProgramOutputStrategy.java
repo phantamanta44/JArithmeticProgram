@@ -1,19 +1,17 @@
 package io.github.phantamanta44.veryserious.jarithmeticprogram.impl.output;
 
-import io.github.phantamanta44.veryserious.jarithmeticprogram.api.output.IProgramOutputStrategy;
-
 import java.io.IOException;
+import java.io.OutputStream;
 
-public class StandardProgramOutputStrategy implements IProgramOutputStrategy {
+public class StandardProgramOutputStrategy extends StdioProgramOutputStrategy {
 
-    @Override
-    public void performTextualOutputSolution(String output) throws IOException {
-
+    public StandardProgramOutputStrategy(OutputStream outputStream) {
+        super(System.out);
     }
 
     @Override
-    public void performBinaryOutputSolution(byte[] output) throws IOException {
-
+    public void performTextualOutputSolution(String output) throws IOException {
+        super.performTextualOutputSolution(output + "\n");
     }
 
 }
